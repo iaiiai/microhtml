@@ -22,7 +22,7 @@ const AST = {
    body: 'Hello world!'
 };
 
-> <h1 variant="bold">Hello world!</h1>
+// output: <h1 variant="bold">Hello world!</h1>
 ```
 **And now we can create our element, then transform it to HTML code.**
 ```js
@@ -34,7 +34,7 @@ console.log(element);
 ```
 **A few words about AST**
 
-AST is an object that can contain <code> tagName </code> <code> type </code> <code> attr </code> <code> children </code> and <code> body </code> fields and nothing more!
+AST is an object that can contain <code>tagName</code> <code>type</code> <code>attr</code> <code>children</code> and <code>body</code> fields and nothing more!
 Elements created as the "single" type cannot have "children" and "body", only attributes, so you can leave these fields as empty object and array respectively.
 Element is the same object as above.
 
