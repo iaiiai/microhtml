@@ -36,7 +36,9 @@ AST is an object that can contain <code>tagName</code> <code>type</code> <code>a
 Elements created as the "single" type cannot have "children" and "body", only attributes, so you can leave these fields as empty object and array respectively.
 <code>children</code> field must be an array of the same objects as above.
 
+**AST boilerplate:**
 
+<code>{'', '', {}, [], ''}</code>
 
 ## Classes
 
