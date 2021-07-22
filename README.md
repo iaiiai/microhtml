@@ -34,7 +34,7 @@ console.log(element);
 
 AST is an object that can contain <code>tagName</code> <code>type</code> <code>attr</code> <code>children</code> and <code>body</code> fields and nothing more!
 Elements created as the "single" type cannot have "children" and "body", only attributes, so you can leave these fields as empty object and array respectively.
-Element is the same object as above.
+<code>children</code> field must be an array of the same objects as above.
 
 
 
