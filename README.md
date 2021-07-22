@@ -1,3 +1,38 @@
+# Introduction
+
+**Let's connect library**
+```js
+const { createElement } = require('microhtml');
+```
+
+**Firstly you must have AST**
+The syntax is pretty simple.
+```js
+const AST = {
+   tagName: 'h1', // Any
+   type: 'paired', // 'single' or 'paired'
+   attr: {
+      variant: 'bold'
+   },
+   children: [
+      {...},
+      {...},
+   ],
+   body: 'Hello world!'
+};
+```
+**And now we can create our element, then transform it to HTML code.**
+```js
+const element = createElement(AST).transform();
+console.log(element);
+```
+**A few words about AST**
+AST is an object that can contain <code> tagName </code> <code> type </code> <code> attr </code> <code> children </code> and <code> body </code> fields and nothing more!
+Elements created as the "single" type cannot have "children" and "body", only attributes, so you can leave these fields as empty object and array respectively.
+Element is the same object as above.
+
+
+
 ## Classes
 
 <dl>
