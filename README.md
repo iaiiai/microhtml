@@ -6,6 +6,7 @@ const { createElement } = require('microhtml');
 ```
 
 **Firstly you must have AST**
+
 The syntax is pretty simple.
 ```js
 const AST = {
