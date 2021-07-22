@@ -21,11 +21,16 @@ const AST = {
    ],
    body: 'Hello world!'
 };
+
+> <h1 variant="bold">Hello world!</h1>
 ```
 **And now we can create our element, then transform it to HTML code.**
 ```js
 const element = createElement(AST).transform();
 console.log(element);
+
+>
+
 ```
 **A few words about AST**
 
