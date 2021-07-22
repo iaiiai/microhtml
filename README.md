@@ -38,7 +38,7 @@ Elements created as the "single" type cannot have "children" and "body", only at
 
 **AST boilerplate:**
 
-<code>{'', '', {}, [], ''}</code>
+<code>{tagName: '', type: '', attr: {}, childre: [], body: ''}</code>
 
 ## Classes
 
