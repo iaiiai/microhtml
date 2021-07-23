@@ -1,5 +1,9 @@
 # Introduction
 
+**Installation**
+
+<code>npm i microhtml</code>
+
 **Let's connect library**
 ```js
 const { createElement } = require('microhtml');
